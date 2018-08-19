@@ -4,8 +4,7 @@
 
 What if we needed to port our application to another language? Modify your code to call the [Translator API](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/) on the caption and tags you get back from the Vision service.
 
-Look into the _Image Processing Library_ at the _Service Helpers_. You can copy one of these and use it to invoke the [Translator API](https://docs.microsofttranslator.com/text-translate.html). Now you can hook this into the `ImageProcessor.cs`. Try adding translated versions to your `ImageInsights` class, and then wire it through to the CosmosDB `ImageMetadata` class. 
-
+Look into the _Image Processing Library_ at the _Service Helpers_. You can copy one of these and use it to invoke the [Translator API](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/translator-info-overview). Now you can hook this into the `ImageProcessor.cs`. Try adding translated versions to your `ImageInsights` class, and then wire it through to the CosmosDB `ImageMetadata` class. 
 
 ## Lab Completion
 
@@ -16,8 +15,6 @@ You should have learned:
 - How to configure your apps to call Cognitive Services
 - How to build an application that calls various Cognitive Services  (specifically Computer Vision and LUIS) in .NET applications
 
-
-
 Resources for future projects/learning:
 
 - [Cognitive Services](https://www.microsoft.com/cognitive-services)
@@ -25,6 +22,6 @@ Resources for future projects/learning:
 - [Azure Search](https://azure.microsoft.com/en-us/services/search/)
 - [Bot Developer Portal](http://dev.botframework.com)
 
-
-
 Back to [README](./0_README.md)
+
+Back to [the main README](./../0_README.md)

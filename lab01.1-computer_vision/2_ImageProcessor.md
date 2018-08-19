@@ -14,7 +14,7 @@ There are five main categories for the available Cognitive Services:
 
 You can browse all of the specific APIs in the [Services Directory](https://azure.microsoft.com/en-us/services/cognitive-services/directory/). 
 
-As you may recall, the application we'll be building today will use [Computer Vision](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) to grab tags and a description.
+As you may recall, the application we'll be building today will use [Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) to grab tags and a description.
 
 Let's talk about how we're going to call  Cognitive Services in our application.
 
