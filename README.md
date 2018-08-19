@@ -1,10 +1,14 @@
 # Welcome 
 
-Welcome to the one day AI Developer Workshop. This material is based on the [Cloud AI Bootcamp](https://azure.github.io/LearnAI-Bootcamp/).
+Welcome to the one day AI Developer Workshop. This material is based on the four day [Cloud AI Bootcamp](https://azure.github.io/LearnAI-Bootcamp/).
 
 In this workshop we will focus on hands-on activities that develop proficiency in AI-oriented services such as Azure Bot Services, Azure Search, and Cognitive Services. These labs assume an introductory to intermediate knowledge of these services, and if this is not the case, then you should spend the time working through the pre-requisites.
 
+The structure is intended to be hands-on. Each lab should be able to be run in relative isolation, so as long as **appropriate pre-requisites are met**, an individual should be able to complete a given lab without needing to complete the others.
+
 # Goals
+
+The goal of this workshop is to provide a kick-start to individuals who need to develop deeper proficiency with the range of the Microsoft Cloud AI platform. This is not "Getting Started with..." the various services and assume a 100-200-level familiarity with the products prior to getting started.
 
 Most challenges observed by customers in these realms are in stitching multiple services together. As such, where possible, we have tried to place key concepts in the context of a broader example. 
 
