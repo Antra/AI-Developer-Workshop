@@ -49,9 +49,6 @@ Start Visual Studio 2017, Community Edition, open the Visual Studio solution
 named **CustomVision.Sample.sln** in the sub-directory of where this lab is
 located:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Resources/Starter/CustomVision.Sample/CustomVision.Sample.sln
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 Resources/Starter/CustomVision.Sample/CustomVision.Sample.sln
 ```
@@ -65,7 +62,7 @@ displayed from line 35:
 
  
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```C#
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -146,7 +143,7 @@ namespace CustomVision.Sample
         }
     }
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
  
 
