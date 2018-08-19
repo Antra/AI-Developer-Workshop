@@ -3,7 +3,11 @@ Estimated Time: 30-40 minutes
 
 ### Lab: Setting up your Azure Account
 
-You may activate an Azure free trial at [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/).  
+You may activate an Azure free trial at [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/). 
+
+Use your personal [Microsoft Account](https://account.microsoft.com/account) - not your corporate work account. If you don't have a personal Microsoft Account you can create one for free at [signup.live.com](https://signup.live.com/).
+
+**Hint:** If you browser automatically signs in with your corporate work account use a [private window in Firefox](https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history) or an [incognito window in Chrome](https://support.google.com/chrome/answer/95464). 
 
 ### Lab 1.1: Setting up your Data Science Virtual Machine
 
