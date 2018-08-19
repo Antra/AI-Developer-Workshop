@@ -1,35 +1,27 @@
 # Developing Intelligent Applications with LUIS 
-
 This hands-on lab guides you through creating a model to enhance the Natural Language Processing capabilities of your applications, using Microsoft's Language Understanding Intelligent Service (LUIS). 
-
 
 ## Objectives
 In this lab, you will:
 - Build, train and publish a LUIS model to help your bot (which will be created in a future lab) communicate effectively
 
-
 While there is a focus on LUIS, you will also leverage the following technologies:
 
 - Data Science Virtual Machine (DSVM)
 
-
 ## Prerequisites
-
 This workshop is meant for an AI Developer on Azure. Since this is a short workshop, there are certain things you need before you arrive.
 
 You should have some experience developing bots with Microsoft's Bot Framework. We won't spend a lot of time discussing how to design them or how dialogs work. If you are not familiar with the Bot Framework, you should take [this Microsoft Virtual Academy course](https://mva.microsoft.com/en-us/training-courses/creating-bots-in-the-microsoft-bot-framework-using-c-17590#!) prior to attending the workshop.
 
 Also, you should have experience with the portal and be able to create resources (and spend money) on Azure. We will not be providing Azure passes for this workshop.
 
-
 ## Introduction
-
 We're going to build an end-to-end scenario that allows you to pull in your own pictures, use Cognitive Services to find objects and people in the images, obtain a description and tags, and store all of that data into a NoSQL Store (CosmosDB). We'll use that NoSQL Store to populate an Azure Search index, and then build a Bot Framework bot using LUIS to allow easy, targeted querying.
 
 > Note: In this lab, we will only be creating the LUIS model that you will use in a future lab to build a more intelligent bot.
 
 ## Architecture
-
 In `lab01.1-computer_vision`, we built a simple C# application that allows you to ingest pictures from your local drive, then invoke the [Computer Vision](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) Cognitive Service to grab tags and a description for those images.
 
 Once we had this data, we processed it and stored all the information needed in [CosmosDB](https://azure.microsoft.com/en-us/services/documentdb/), our [NoSQL](https://en.wikipedia.org/wiki/NoSQL) [PaaS](https://azure.microsoft.com/en-us/overview/what-is-paas/) offering.
