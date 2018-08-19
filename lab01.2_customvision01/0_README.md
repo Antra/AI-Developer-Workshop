@@ -46,7 +46,7 @@ perform the test prediction
  
 
 Start Visual Studio 2017, Community Edition, open the Visual Studio solution
-named **CustomVision.Sample.sln** in the sub-directory of where this lab is
+named `CustomVision.Sample.sln` in the sub-directory of where this lab is
 located:
 
 ```
@@ -155,11 +155,11 @@ body of the `Main()` method after the call to `new TrainingApi().`
 What method should you replace the _ with to create a new Custom Vision Service project?
 
  
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```C#
 // Create a new project
 Console.WriteLine("Creating new project:");
 var project = trainingApi._("My New Project");
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
  
 
@@ -170,11 +170,11 @@ To add tags to your project, insert the following code after the call to
 
 What method should you replace the _ with to create a tag for Japanese Cherry?
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```C#
 // Make two tags in the new project
 var hemlockTag = trainingApi.CreateTag(project.Id, "Hemlock");
 var japaneseCherryTag = trainingApi._(project.Id, "Japanese Cherry");
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
  
 
@@ -183,9 +183,7 @@ var japaneseCherryTag = trainingApi._(project.Id, "Japanese Cherry");
 To add the images we have in memory to the project, insert the following code
 after the call to `(project.Id, "Japanese Cherry")` method.
 
- 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```C#
 // Add some images to the tags
 Console.WriteLine("\tUploading images");
 LoadImagesFromDisk();
@@ -198,8 +196,7 @@ foreach (var image in hemlockImages)
 
 // Or uploaded in a single batch 
 trainingApi.CreateImagesFromData(project.Id, japaneseCherryImages, new List<Guid>() { japaneseCherryTag.Id });
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+```
  
 
 ### Step 5: Train the project
@@ -209,11 +206,10 @@ the following code after the end of code that you added in the prior step. This
 creates the first iteration in the project. We can then mark this iteration as
 the default iteration.
 
-What method should you replace the _ with to train the project? 
+What method should you replace the `_` with to train the project? 
 
  
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```C#
 // Now there are images with tags start training the project
 Console.WriteLine("\tTraining");
 var iteration = trainingApi._(project.Id);
@@ -231,7 +227,7 @@ while (iteration.Status == "Training")
 iteration.IsDefault = true;
 trainingApi.UpdateIteration(project.Id, iteration.Id, iteration);
 Console.WriteLine("Done!\n");
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 ### Step 6: Get and use the default prediction endpoint
 
@@ -242,7 +238,7 @@ entered.
 
  
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```C#
 // Now there is a trained endpoint, it can be used to make a prediction
 
 // Add your prediction key from the settings page of the portal 
@@ -261,7 +257,7 @@ foreach (var c in result.Predictions)
     Console.WriteLine($"\t{c.Tag}: {c.Probability:P1}");
 }
 Console.ReadKey();
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
  
 
@@ -272,8 +268,7 @@ into the console app when running the solution so have this at the ready. The
 training and prediction of the images can take 2 minutes. The prediction results
 appear on the console.
 
-Further Reading
----------------
+## Further Reading
 
 The source code for the Windows client library is available on
 [github](https://github.com/Microsoft/Cognitive-CustomVision-Windows/).
