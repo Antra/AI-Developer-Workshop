@@ -14,7 +14,6 @@ Custom Vision API.  
 This example has been tested using the .NET Framework using [Visual Studio 2017,
 Community Edition](https://www.visualstudio.com/downloads/)
 
-
 ### The Training API key
 
 You also need to have a training API key. The training API key allows you to
@@ -43,8 +42,6 @@ perform the test prediction
 
 ### Step 1: Create a console application and prepare the training key and the images needed for the example.
 
- 
-
 Start Visual Studio 2017, Community Edition, open the Visual Studio solution
 named `CustomVision.Sample.sln` in the sub-directory of where this lab is
 located:
@@ -59,8 +56,6 @@ loads two sets of images that this example uses to train the project, and one
 test image that the example loads to demonstrate the use of the default
 prediction endpoint. On opening the project the following code should be
 displayed from line 35:
-
- 
 
 ```C#
 using System;
@@ -144,7 +139,6 @@ namespace CustomVision.Sample
     }
 }
 ```
-
  
 
 ### Step 2: Create a Custom Vision Service project
@@ -160,7 +154,6 @@ What method should you replace the _ with to create a new Custom Vision Service 
 Console.WriteLine("Creating new project:");
 var project = trainingApi._("My New Project");
 ```
-
  
 
 ### Step 3: Add tags to your project
@@ -175,7 +168,6 @@ What method should you replace the _ with to create a tag for Japanese Cherry?
 var hemlockTag = trainingApi.CreateTag(project.Id, "Hemlock");
 var japaneseCherryTag = trainingApi._(project.Id, "Japanese Cherry");
 ```
-
  
 
 ### Step 4: Upload images to the project
@@ -229,6 +221,7 @@ trainingApi.UpdateIteration(project.Id, iteration.Id, iteration);
 Console.WriteLine("Done!\n");
 ```
 
+
 ### Step 6: Get and use the default prediction endpoint
 
 We are now ready to use the model for prediction. First we obtain the endpoint
@@ -258,7 +251,6 @@ foreach (var c in result.Predictions)
 }
 Console.ReadKey();
 ```
-
  
 
 ### Step 7: Run the example
