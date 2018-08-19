@@ -8,14 +8,11 @@ source example as a template for building your own app for Windows using the
 Custom Vision API.  
 
 ## Prerequisites
-
 ### Platform requirements
-
 This example has been tested using the .NET Framework using [Visual Studio 2017,
 Community Edition](https://www.visualstudio.com/downloads/)
 
 ### The Training API key
-
 You also need to have a training API key. The training API key allows you to
 create, manage, and train Custom Vision projects programatically. All operations
 on <https://customvision.ai> are exposed through this library, allowing you to
@@ -147,7 +144,6 @@ To create a new Custom Vision Service project, add the following code in the
 body of the `Main()` method after the call to `new TrainingApi().`
 
 What method should you replace the _ with to create a new Custom Vision Service project?
-
  
 ```C#
 // Create a new project
@@ -199,7 +195,6 @@ creates the first iteration in the project. We can then mark this iteration as
 the default iteration.
 
 What method should you replace the `_` with to train the project? 
-
  
 ```C#
 // Now there are images with tags start training the project
@@ -228,8 +223,6 @@ We are now ready to use the model for prediction. First we obtain the endpoint
 associated with the default iteration. Then we send a test image to the project
 using that endpoint. Insert the code after the training code you have just
 entered.
-
- 
 
 ```C#
 // Now there is a trained endpoint, it can be used to make a prediction
