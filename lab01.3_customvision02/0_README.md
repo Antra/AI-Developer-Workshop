@@ -7,7 +7,7 @@ The goal of this lab is to explore a basic Windows application that uses the Cus
 This example has been tested using the .NET Framework using [Visual Studio 2017, Community Edition](https://www.visualstudio.com/downloads/)
 
 ### The Training API key
-You also need to have a training API key. The training API key allows you to create, manage, and train Custom Vision projects programatically. All operations on <https://customvision.ai> are exposed through this library, allowing you to automate all aspects of the Custom Vision Service. You can obtain a key by creating a new project at <https://customvision.ai> and then clicking on the "setting" gear in the top right.
+You also need to have a training API key. The training API key allows you to create, manage, and train Custom Vision projects programatically. All operations on [customvision.ai](https://customvision.ai) are exposed through this library, allowing you to automate all aspects of the Custom Vision Service. You can obtain a key by creating a new project at [customvision.ai](https://customvision.ai) and then clicking on the "setting" gear in the top right.
 
 ### The Images used for Training and Predicting
 In the Resources\Images folder are three folders:
