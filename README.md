@@ -1,6 +1,6 @@
 # Welcome 
 
-Welcome to the one day Learn AI Developer Workshop. This material is based on the [Cloud AI Bootcamp](https://azure.github.io/LearnAI-Bootcamp/).
+Welcome to the one day AI Developer Workshop. This material is based on the [Cloud AI Bootcamp](https://azure.github.io/LearnAI-Bootcamp/).
 
 In this workshop we will focus on hands-on activities that develop proficiency in AI-oriented services such as Azure Bot Services, Azure Search, and Cognitive Services. These labs assume an introductory to intermediate knowledge of these services, and if this is not the case, then you should spend the time working through the pre-requisites.
 
@@ -40,25 +40,21 @@ Finally, before arriving at the workshop, we expect you to have completed [1_Set
 
 Please note: This is a rough agenda, and the schedule is subject to change pending class activities and interaction.
 
-- Day 1: Cognitive Services
-  - 8-9 (optional): Setup assistance
-  - 9-10: Introduction and Context for Cognitive Services
-  - 10-12: [Lab 1.1: Simplifying Cognitive Services App Development using Portable Class Libraries][lab-cogsrvc-301]
-  - 12-1: Lunch
-  - 1-1:30: [Lab 1.2: Creating an Image Classification Application using the Custom Vision Service I][lab-cogsrvc-321]
-  - 1:30-2:00: [Lab 1.3: Creating an Image Classification Application using the Custom Vision Service II][lab-cogsrvc-322]
-  - 2:00-2:30: [Lab 1.4: Creating an Image Classification Application using the Custom Vision Service III][lab-cogsrvc-323]
-  - 2:30-3:45: [Lab 1.5: Developing Intelligent Applications with LUIS][lab-cogsrvc-341]
-  - 3:45-5: [Business Case I - Cognitive Services](./lab01.6-bootcamp_case_1/Case_Part1.md)
-- Day 2: Bots
-  - 9-10: [Lab 2.1: Developing Intelligent Applications with Azure Search][lab-azsearch-301]
-  - 10-10:30: Introduction and Context for Bots
-  - 10:30-12: [Lab 2.2: Bulding Intelligent Bots][lab-intelbot-301]
-  - 12-1: Lunch
-  - 1-2:  [Lab 2.3: Log Chat Conversations in your Bot][lab-intelbot-311]
-  - 2-3: [Lab 2.4: Testing your Bot][lab-intelbot-321]
-  - 3-4: [Business Case II - Bots](./lab02.5-bootcamp_case_2/Case_Part2.md)
-  - 4-5: Q&A and Feedback for Emerging AI Bootcamp
+- 8-9 (optional): Setup assistance
+- 9-10: Introduction and Context for Cognitive Services and Bots
+- 10-12: [Lab 1.1: Simplifying Cognitive Services App Development using Portable Class Libraries][lab-cogsrvc-301]
+- 12-13: Lunch
+- 13-13:30: [Lab 1.2: Creating an Image Classification Application using the Custom Vision Service I][lab-cogsrvc-321]
+- 13:30-14:30: [Lab 1.5: Developing Intelligent Applications with LUIS][lab-cogsrvc-341]
+- 14:30-15:30: [Lab 2.1: Developing Intelligent Applications with Azure Search][lab-azsearch-301]
+- 15:30-17:00: [Lab 2.2: Bulding Intelligent Bots][lab-intelbot-301]
+
+Extra labs:
+
+- [Lab 1.3: Creating an Image Classification Application using the Custom Vision Service II][lab-cogsrvc-322]
+- [Lab 1.4: Creating an Image Classification Application using the Custom Vision Service III][lab-cogsrvc-323]
+- [Lab 2.3: Log Chat Conversations in your Bot][lab-intelbot-311]
+- [Lab 2.4: Testing your Bot][lab-intelbot-321]
 
 [lab-cogsrvc-301]: ./lab01.1-computer_vision/0_README.md
 [lab-cogsrvc-321]: ./lab01.2_customvision01/0_README.md
