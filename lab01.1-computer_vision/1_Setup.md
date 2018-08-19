@@ -3,7 +3,7 @@ Estimated Time: 30-40 minutes
 
 ### Lab: Setting up your Azure Account
 
-You may activate an Azure free trial at [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/). 
+You may activate an Azure free trial at [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/). You will be asked to enter personal information, including a credit card. This is to verify that you are human - you will not be charged anything for the Azure free trial subscription.
 
 Use your personal [Microsoft Account](https://account.microsoft.com/account) - not your corporate work account. If you don't have a personal Microsoft Account you can create one for free at [signup.live.com](https://signup.live.com/).
 
