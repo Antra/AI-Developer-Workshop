@@ -60,19 +60,13 @@ Please note: This is a rough agenda, and the schedule is subject to change pendi
   - 3-4: [Business Case II - Bots](./lab02.5-bootcamp_case_2/Case_Part2.md)
   - 4-5: Q&A and Feedback for Emerging AI Bootcamp
 
-
-# Discussion Forum
-
-We will also use a gitter forum for discussion. Please post comments and questions [here][gitter].
-
-[lab-cogsrvc-301]: ./lab01.1-computer_vision/0_README
-[lab-cogsrvc-321]: ./lab01.2_customvision01/0_README
-[lab-cogsrvc-322]: ./lab01.3_customvision02/0_README
-[lab-cogsrvc-323]: ./lab01.4_customvision03/0_README
-[lab-cogsrvc-341]: ./lab01.5-luis/0_README
-[lab-azsearch-301]: ./lab02.1-azure_search/0_README
-[lab-intelbot-301]: ./lab02.2-building_bots/0_README
-[lab-intelbot-311]: ./lab02.3-logging_chat_conversations/0_README
-[lab-intelbot-321]: ./lab02.4-testing_bots/0_README
-[gitter]: https://gitter.im/LearnAI-Bootcamps
+[lab-cogsrvc-301]: ./lab01.1-computer_vision/0_README.md
+[lab-cogsrvc-321]: ./lab01.2_customvision01/0_README.md
+[lab-cogsrvc-322]: ./lab01.3_customvision02/0_README.md
+[lab-cogsrvc-323]: ./lab01.4_customvision03/0_README.md
+[lab-cogsrvc-341]: ./lab01.5-luis/0_README.md
+[lab-azsearch-301]: ./lab02.1-azure_search/0_README.md
+[lab-intelbot-301]: ./lab02.2-building_bots/0_README.md
+[lab-intelbot-311]: ./lab02.3-logging_chat_conversations/0_README.md
+[lab-intelbot-321]: ./lab02.4-testing_bots/0_README.md
 
