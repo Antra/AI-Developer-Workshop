@@ -65,7 +65,7 @@ Please note: This is a rough agenda, and the schedule is subject to change pendi
 
 We will also use a gitter forum for discussion. Please post comments and questions [here][gitter].
 
-[lab-cogsrvc-301]: https://aka.ms/LearnAI-EmergingAIDevBootcamp-cogsrvc-301
+[lab-cogsrvc-301]: ./lab01.1-computer_vision/0_README
 [lab-cogsrvc-321]: https://aka.ms/LearnAI-EmergingAIDevBootcamp-cogsrvc-321
 [lab-cogsrvc-322]: https://aka.ms/LearnAI-EmergingAIDevBootcamp-cogsrvc-322
 [lab-cogsrvc-323]: https://aka.ms/LearnAI-EmergingAIDevBootcamp-cogsrvc-323
