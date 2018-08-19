@@ -87,7 +87,7 @@ Click **OK, three times** to start the Indexer job that will start the importing
 
 ![Configure Indexer](./resources/assets/AzureSearch-ConfigureIndexer.png) 
 
-***Query the Search Index***
+#### Query the Search Index 
 
 You should see a message pop up indicating that Indexing has started.  If you wish to check the status of the Index, you can choose the "Indexes" option in the main Azure Search blade.
 
@@ -103,7 +103,7 @@ In the resulting json, you'll see a number after `@search.score`. Scoring refers
 
 Azure Search uses default scoring to compute an initial score, but you can customize the calculation through a [scoring profile](https://docs.microsoft.com/en-us/rest/api/searchservice/add-scoring-profiles-to-a-search-index). There is an extra lab at the end of this workshop if you want to get some hands on experience with using [term boosting](https://docs.microsoft.com/en-us/rest/api/searchservice/Lucene-query-syntax-in-Azure-Search#bkmk_termboost) for scoring.
 
-**Finish early? Try this extra credit lab:**
+### Finish early? Try this extra credit lab
 
 [Postman](https://www.getpostman.com/) is a great tool that allows you to easily execute Azure Search REST API calls and is a great debugging tool.  You can take any query from the Azure Search Explorer and along with an Azure Search API key to be executed within Postman.
 
