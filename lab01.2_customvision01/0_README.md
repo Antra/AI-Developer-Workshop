@@ -34,11 +34,8 @@ The Hemlock and Japenese Cherry folders contain images of these types of plants 
 will be trained and tagged. The Test folder contains an image that will be used to 
 perform the test prediction
 
-
 ## Lab: Creating a Custom Vision Application
-
 ### Step 1: Create a console application and prepare the training key and the images needed for the example.
-
 Start Visual Studio 2017, Community Edition, open the Visual Studio solution
 named `CustomVision.Sample.sln` in the sub-directory of where this lab is
 located:
@@ -136,10 +133,8 @@ namespace CustomVision.Sample
     }
 }
 ```
- 
 
 ### Step 2: Create a Custom Vision Service project
-
 To create a new Custom Vision Service project, add the following code in the
 body of the `Main()` method after the call to `new TrainingApi().`
 
@@ -150,10 +145,8 @@ What method should you replace the _ with to create a new Custom Vision Service 
 Console.WriteLine("Creating new project:");
 var project = trainingApi._("My New Project");
 ```
- 
 
 ### Step 3: Add tags to your project
-
 To add tags to your project, insert the following code after the call to
 `("My New Project");`.
 
@@ -164,10 +157,8 @@ What method should you replace the _ with to create a tag for Japanese Cherry?
 var hemlockTag = trainingApi.CreateTag(project.Id, "Hemlock");
 var japaneseCherryTag = trainingApi._(project.Id, "Japanese Cherry");
 ```
- 
 
 ### Step 4: Upload images to the project
-
 To add the images we have in memory to the project, insert the following code
 after the call to `(project.Id, "Japanese Cherry")` method.
 
@@ -185,10 +176,8 @@ foreach (var image in hemlockImages)
 // Or uploaded in a single batch 
 trainingApi.CreateImagesFromData(project.Id, japaneseCherryImages, new List<Guid>() { japaneseCherryTag.Id });
 ```
- 
 
 ### Step 5: Train the project
-
 Now that we have added tags and images to the project, we can train it. Insert
 the following code after the end of code that you added in the prior step. This
 creates the first iteration in the project. We can then mark this iteration as
@@ -216,9 +205,7 @@ trainingApi.UpdateIteration(project.Id, iteration.Id, iteration);
 Console.WriteLine("Done!\n");
 ```
 
-
 ### Step 6: Get and use the default prediction endpoint
-
 We are now ready to use the model for prediction. First we obtain the endpoint
 associated with the default iteration. Then we send a test image to the project
 using that endpoint. Insert the code after the training code you have just
@@ -244,17 +231,14 @@ foreach (var c in result.Predictions)
 }
 Console.ReadKey();
 ```
- 
 
 ### Step 7: Run the example
-
 Build and run the solution. You will be required to input your training API key
 into the console app when running the solution so have this at the ready. The
 training and prediction of the images can take 2 minutes. The prediction results
 appear on the console.
 
 ## Further Reading
-
 The source code for the Windows client library is available on
 [github](https://github.com/Microsoft/Cognitive-CustomVision-Windows/).
 
