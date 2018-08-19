@@ -1,24 +1,13 @@
 # Creating an Image Classification Application using the Custom Vision Service I
 
-The goal of this lab is to explore a basic Windows application that uses
-the Custom Vision API to create a project, add tags to it, upload images,
-train the project, obtain the default prediction endpoint URL for the project,
-and use the endpoint to programmatically test an image. You can use this open
-source example as a template for building your own app for Windows using the
-Custom Vision API.  
+The goal of this lab is to explore a basic Windows application that uses the Custom Vision API to create a project, add tags to it, upload images, train the project, obtain the default prediction endpoint URL for the project, and use the endpoint to programmatically test an image. You can use this open source example as a template for building your own app for Windows using the Custom Vision API.  
 
 ## Prerequisites
 ### Platform requirements
-This example has been tested using the .NET Framework using [Visual Studio 2017,
-Community Edition](https://www.visualstudio.com/downloads/)
+This example has been tested using the .NET Framework using [Visual Studio 2017, Community Edition](https://www.visualstudio.com/downloads/)
 
 ### The Training API key
-You also need to have a training API key. The training API key allows you to
-create, manage, and train Custom Vision projects programatically. All operations
-on <https://customvision.ai> are exposed through this library, allowing you to
-automate all aspects of the Custom Vision Service. You can obtain a key by
-creating a new project at <https://customvision.ai> and then clicking on the
-"setting" gear in the top right.
+You also need to have a training API key. The training API key allows you to create, manage, and train Custom Vision projects programatically. All operations on <https://customvision.ai> are exposed through this library, allowing you to automate all aspects of the Custom Vision Service. You can obtain a key by creating a new project at <https://customvision.ai> and then clicking on the "setting" gear in the top right.
 
 > Note: Internet Explorer is not supported. We recommend using Edge, Firefox, or Chrome.
 
@@ -30,26 +19,17 @@ In the Resources\Images folder are three folders:
 - Japanese Cherry
 - Test
 
-The Hemlock and Japenese Cherry folders contain images of these types of plants that
-will be trained and tagged. The Test folder contains an image that will be used to 
-perform the test prediction
+The Hemlock and Japenese Cherry folders contain images of these types of plants that will be trained and tagged. The Test folder contains an image that will be used to perform the test prediction
 
 ## Lab: Creating a Custom Vision Application
 ### Step 1: Create a console application and prepare the training key and the images needed for the example.
-Start Visual Studio 2017, Community Edition, open the Visual Studio solution
-named `CustomVision.Sample.sln` in the sub-directory of where this lab is
-located:
+Start Visual Studio 2017, Community Edition, open the Visual Studio solution named `CustomVision.Sample.sln` in the sub-directory of where this lab is located:
 
 ```
 Resources/Starter/CustomVision.Sample/CustomVision.Sample.sln
 ```
 
-This code defines and calls two helper methods. The method called
-`GetTrainingKey` prepares the training key. The one called `LoadImagesFromDisk`
-loads two sets of images that this example uses to train the project, and one
-test image that the example loads to demonstrate the use of the default
-prediction endpoint. On opening the project the following code should be
-displayed from line 35:
+This code defines and calls two helper methods. The method called `GetTrainingKey` prepares the training key. The one called `LoadImagesFromDisk` loads two sets of images that this example uses to train the project, and one test image that the example loads to demonstrate the use of the default prediction endpoint. On opening the project the following code should be displayed from line 35:
 
 ```C#
 using System;
@@ -135,10 +115,9 @@ namespace CustomVision.Sample
 ```
 
 ### Step 2: Create a Custom Vision Service project
-To create a new Custom Vision Service project, add the following code in the
-body of the `Main()` method after the call to `new TrainingApi().`
+To create a new Custom Vision Service project, add the following code in the body of the `Main()` method after the call to `new TrainingApi().`
 
-What method should you replace the _ with to create a new Custom Vision Service project?
+What method should you replace the `_` with to create a new Custom Vision Service project?
  
 ```C#
 // Create a new project
@@ -147,20 +126,18 @@ var project = trainingApi._("My New Project");
 ```
 
 ### Step 3: Add tags to your project
-To add tags to your project, insert the following code after the call to
-`("My New Project");`.
+To add tags to your project, insert the following code after the call to `("My New Project");`.
 
-What method should you replace the _ with to create a tag for Japanese Cherry?
+What method should you replace the `_` with to create a tag for Japanese Cherry?
 
 ```C#
 // Make two tags in the new project
 var hemlockTag = trainingApi.CreateTag(project.Id, "Hemlock");
-var japaneseCherryTag = trainingApi._(project.Id, "Japanese Cherry");
+var japaneseCherryTag = trainingApi.`_`(project.Id, "Japanese Cherry");
 ```
 
 ### Step 4: Upload images to the project
-To add the images we have in memory to the project, insert the following code
-after the call to `(project.Id, "Japanese Cherry")` method.
+To add the images we have in memory to the project, insert the following code after the call to `(project.Id, "Japanese Cherry")` method.
 
 ```C#
 // Add some images to the tags
@@ -178,10 +155,7 @@ trainingApi.CreateImagesFromData(project.Id, japaneseCherryImages, new List<Guid
 ```
 
 ### Step 5: Train the project
-Now that we have added tags and images to the project, we can train it. Insert
-the following code after the end of code that you added in the prior step. This
-creates the first iteration in the project. We can then mark this iteration as
-the default iteration.
+Now that we have added tags and images to the project, we can train it. Insert the following code after the end of code that you added in the prior step. This creates the first iteration in the project. We can then mark this iteration as the default iteration.
 
 What method should you replace the `_` with to train the project? 
  
@@ -206,10 +180,7 @@ Console.WriteLine("Done!\n");
 ```
 
 ### Step 6: Get and use the default prediction endpoint
-We are now ready to use the model for prediction. First we obtain the endpoint
-associated with the default iteration. Then we send a test image to the project
-using that endpoint. Insert the code after the training code you have just
-entered.
+We are now ready to use the model for prediction. First we obtain the endpoint associated with the default iteration. Then we send a test image to the project using that endpoint. Insert the code after the training code you have just entered.
 
 ```C#
 // Now there is a trained endpoint, it can be used to make a prediction
@@ -233,14 +204,9 @@ Console.ReadKey();
 ```
 
 ### Step 7: Run the example
-Build and run the solution. You will be required to input your training API key
-into the console app when running the solution so have this at the ready. The
-training and prediction of the images can take 2 minutes. The prediction results
-appear on the console.
+Build and run the solution. You will be required to input your training API key into the console app when running the solution so have this at the ready. The training and prediction of the images can take 2 minutes. The prediction results appear on the console.
 
 ## Further Reading
-The source code for the Windows client library is available on
-[github](https://github.com/Microsoft/Cognitive-CustomVision-Windows/).
+The source code for the Windows client library is available on [github](https://github.com/Microsoft/Cognitive-CustomVision-Windows/).
 
-The client library includes multiple sample applications, and this tutorial is
-based on the `CustomVision.Sample` demo within that repository.
+The client library includes multiple sample applications, and this tutorial is based on the `CustomVision.Sample` demo within that repository.
