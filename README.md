@@ -48,7 +48,7 @@ Please note: This is a rough agenda, and the schedule is subject to change pendi
 - 14:30-15:30: [Lab 2.1: Developing Intelligent Applications with Azure Search][lab-azsearch-301]
 - 15:30-17:00: [Lab 2.2: Bulding Intelligent Bots][lab-intelbot-301]
 
-## Extra labs:
+## Extra labs
 
 Here are some extra labs ff you finish the labs above.
 
