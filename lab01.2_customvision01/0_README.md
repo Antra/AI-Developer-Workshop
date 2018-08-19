@@ -1,15 +1,13 @@
-**Custom Vision API C\# Tutorial**
-==================================
+# Creating an Image Classification Application using the Custom Vision Service I
 
-The goal of this tutorial is to explore a basic Windows application that uses
+The goal of this lab is to explore a basic Windows application that uses
 the Custom Vision API to create a project, add tags to it, upload images,
 train the project, obtain the default prediction endpoint URL for the project,
 and use the endpoint to programmatically test an image. You can use this open
 source example as a template for building your own app for Windows using the
 Custom Vision API.  
 
-**Prerequisites**
------------------
+## Prerequisites
 
 ### Platform requirements
 
@@ -41,8 +39,7 @@ will be trained and tagged. The Test folder contains an image that will be used 
 perform the test prediction
 
 
-**Lab: Creating a Custom Vision Application**
----------------------------------------------
+## Lab: Creating a Custom Vision Application
 
 ### Step 1: Create a console application and prepare the training key and the images needed for the example.
 
@@ -55,6 +52,9 @@ located:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Resources/Starter/CustomVision.Sample/CustomVision.Sample.sln
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+Resources/Starter/CustomVision.Sample/CustomVision.Sample.sln
+```
 
 This code defines and calls two helper methods. The method called
 `GetTrainingKey` prepares the training key. The one called `LoadImagesFromDisk`
