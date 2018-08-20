@@ -50,7 +50,7 @@ Please note: This is a rough agenda, and the schedule is subject to change pendi
 
 ## Extra labs
 
-Here are some extra labs ff you finish the labs above.
+Here are some extra labs if you finish the labs above and have some extra time.
 
 - [Lab 1.3: Creating an Image Classification Application using the Custom Vision Service II][lab-cogsrvc-322]
 - [Lab 1.4: Creating an Image Classification Application using the Custom Vision Service III][lab-cogsrvc-323]
