@@ -219,3 +219,5 @@ Build and run the solution. The training and prediction of the images can take 2
 The source code for this client application is available on [github](https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/tree/master/CustomVision).
 
 The client library includes multiple sample applications, and this tutorial is based on the `CustomVision.Sample` demo within that repository.
+
+Back to [the workshop README](./../README.md)

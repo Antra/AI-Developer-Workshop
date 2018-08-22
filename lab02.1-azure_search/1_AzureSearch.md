@@ -124,3 +124,5 @@ Try performing other searches using [examples such as these](https://docs.micros
 
 
 Back to [README](./0_README.md)
+
+Back to [the workshop README](./../README.md)

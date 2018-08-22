@@ -24,4 +24,4 @@ Resources for future projects/learning:
 
 Back to [README](./0_README.md)
 
-Back to [the main README](./../README.md)
+Back to [the workshop README](./../README.md)

@@ -36,3 +36,5 @@ Chatbots bring their own set of challenges to testing including testing across e
 This hands-on lab demonstrates how you can communicate directly with your bot from a custom client.
 
 Follow the hands-on labs in the sequential manner described above.
+
+Back to [the workshop README](./../README.md)

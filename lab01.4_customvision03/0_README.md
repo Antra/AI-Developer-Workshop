@@ -108,3 +108,5 @@ Build and run the solution. You will be required to input your training API key 
 The source code for the Windows client library is available on [github](https://github.com/Microsoft/Cognitive-CustomVision-Windows/).
 
 The client library includes multiple sample applications, and this tutorial is based on the `CustomVision.Sample` demo within that repository.
+
+Back to [the workshop README](./../README.md)

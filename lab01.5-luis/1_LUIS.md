@@ -135,3 +135,5 @@ If you still have time, spend time exploring the www.luis.ai site. Select "Prebu
 , and check out the [BotBuilder-tools](https://github.com/Microsoft/botbuilder-tools) for creating LUIS models, managing LUIS models, simulating conversations, and more. Later, you may also be interested in [another course that includes how to design LUIS schema](https://aka.ms/daaia).
 
 Back to [README](./0_README.md)
+
+Back to [the workshop README](./../README.md)
