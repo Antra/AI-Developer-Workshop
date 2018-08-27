@@ -46,7 +46,7 @@ Please note: This is a rough agenda, and the schedule is subject to change pendi
 - 13-13:30: [Lab 1.2: Creating an Image Classification Application using the Custom Vision Service I][lab-cogsrvc-321]
 - 13:30-14:30: [Lab 1.5: Developing Intelligent Applications with LUIS][lab-cogsrvc-341]
 - 14:30-15:30: [Lab 2.1: Developing Intelligent Applications with Azure Search][lab-azsearch-301]
-- 15:30-17:00: [Lab 2.2: Bulding Intelligent Bots][lab-intelbot-301]
+- 15:30-17:00: [Lab 2.2: Building Intelligent Bots][lab-intelbot-301]
 
 ## Extra labs
 
