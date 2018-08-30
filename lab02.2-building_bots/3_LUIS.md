@@ -26,6 +26,18 @@ namespace PictureBot.Dialogs
 ...
 ```
 
+If you created the LUIS app in a European or Australia region, you need to add the domain (replace "REGION" with e.g. "westeurope"):
+
+```csharp
+
+namespace PictureBot.Dialogs
+{
+    [LuisModel("YOUR-APP-ID", "YOUR-SUBSCRIPTION-KEY", domain: "REGION.api.cognitive.microsoft.com")]
+    [Serializable]
+
+...
+```
+
 > Fun Aside: You can use [Autofac](https://autofac.org/) to dynamically load the LuisModel attribute on your class instead of hardcoding it, so it could be stored properly in a configuration file.  There is an example of this in the [AlarmBot sample](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Samples/AlarmBot/Models/AlarmModule.cs#L24).  
 
 
