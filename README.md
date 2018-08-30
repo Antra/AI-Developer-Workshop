@@ -43,24 +43,20 @@ Please note: This is a rough agenda, and the schedule is subject to change pendi
 - 9-10: Introduction and Context for Cognitive Services and Bots
 - 10-12: [Lab 1.1: Simplifying Cognitive Services App Development using Portable Class Libraries][lab-cogsrvc-301]
 - 12-13: Lunch
-- 13-13:30: [Lab 1.2: Creating an Image Classification Application using the Custom Vision Service I][lab-cogsrvc-321]
-- 13:30-14:30: [Lab 1.5: Developing Intelligent Applications with LUIS][lab-cogsrvc-341]
-- 14:30-15:30: [Lab 2.1: Developing Intelligent Applications with Azure Search][lab-azsearch-301]
-- 15:30-17:00: [Lab 2.2: Building Intelligent Bots][lab-intelbot-301]
+- 13:00-14:00: [Lab 1.5: Developing Intelligent Applications with LUIS][lab-cogsrvc-341]
+- 14:00-15:00: [Lab 2.1: Developing Intelligent Applications with Azure Search][lab-azsearch-301]
+- 15:00-16:30: [Lab 2.2: Building Intelligent Bots][lab-intelbot-301]
+- 16:30-17:00: Q&A
+
 
 ## Extra labs
 
 Here are some extra labs if you finish the labs above and have some extra time.
 
-- [Lab 1.3: Creating an Image Classification Application using the Custom Vision Service II][lab-cogsrvc-322]
-- [Lab 1.4: Creating an Image Classification Application using the Custom Vision Service III][lab-cogsrvc-323]
 - [Lab 2.3: Log Chat Conversations in your Bot][lab-intelbot-311]
 - [Lab 2.4: Testing your Bot][lab-intelbot-321]
 
 [lab-cogsrvc-301]: ./lab01.1-computer_vision/0_README.md
-[lab-cogsrvc-321]: ./lab01.2_customvision01/0_README.md
-[lab-cogsrvc-322]: ./lab01.3_customvision02/0_README.md
-[lab-cogsrvc-323]: ./lab01.4_customvision03/0_README.md
 [lab-cogsrvc-341]: ./lab01.5-luis/0_README.md
 [lab-azsearch-301]: ./lab02.1-azure_search/0_README.md
 [lab-intelbot-301]: ./lab02.2-building_bots/0_README.md
