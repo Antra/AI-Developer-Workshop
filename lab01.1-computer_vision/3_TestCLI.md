@@ -19,7 +19,7 @@ We will implement the main processing and storage code as a command-line/console
 
 Once you've set your Cognitive Services API keys, your Azure Blob Storage Connection String, and your Cosmos DB Endpoint URI and Key in your _TestCLI's_ `settings.json`, you can run the _TestCLI_.
 
-Run _TestCLI_, then open Command Prompt and navigate to "C:\LearnAI-Bootcamp\lab01.1-computer_vision\resources\code\Starting-ImageProcessing\TestCLI\bin\Debug" folder (Hint: use the "cd" command to change directories). Then enter `TestCLI.exe`. You should get the following result:
+Run _TestCLI_, then open Command Prompt and navigate to "C:\AI-Developer-Workshop\lab01.1-computer_vision\resources\code\Starting-ImageProcessing\TestCLI\bin\Debug" folder (Hint: use the "cd" command to change directories). Then enter `TestCLI.exe`. You should get the following result:
 
 ```
     > TestCLI.exe
@@ -37,7 +37,7 @@ Run _TestCLI_, then open Command Prompt and navigate to "C:\LearnAI-Bootcamp\lab
 By default, it will load your settings from `settings.json` (it builds it into the `.exe`), but you can provide your own using the `-settings` flag. To load images (and their metadata from Cognitive Services) into your cloud storage, you can just tell _TestCLI_ to `-process` your image directory as follows:
 
 ```
-    > TestCLI.exe -process c:\learnai-bootcamp\lab01.1-computer_vision\resources\sample_images
+    > TestCLI.exe -process c:\AI-Developer-Workshop\lab01.1-computer_vision\resources\sample_images
 ```
 
 Once it's done processing, you can query against your Cosmos DB directly using _TestCLI_ as follows:
